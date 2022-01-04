@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Zero Spots" property="og:title">
+
     
         <meta content="https://landing-page-app-hero-images.s3.amazonaws.com/media/LKFGW23MM302IP8NZXN8Z0IEZ07ZL388LDF2MD8K.jpeg" property="og:image">
         <meta content="Zero Spots" property="twitter:title">
@@ -46,11 +47,11 @@
 
 
 <div class = "flex w-full flex-col">  
-    <div  class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-black text-white  dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-black text-white  dark-mode:text-gray-200 dark-mode:bg-gray-800">
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
       
-        <a href="#about"> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/LKFGW23MM302IP8NZXN8Z0IEZ07ZL388LDF2MD8K.jpeg" alt="Zero Spots logo"> </a>
+        <a href= " #about "> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/LKFGW23MM302IP8NZXN8Z0IEZ07ZL388LDF2MD8K.jpeg" alt="Zero Spots logo"> </a>
       
       <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -59,7 +60,8 @@
         </svg>
       </button>
     </div>
-    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:flex-row  lg:justify-end ">
+    
       
 <a 
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
@@ -97,39 +99,18 @@
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
     href="#find-us">Service Areas
 </a>
-     
+   
+    
+  
 
+
+    
+      <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline "x-data="{open: false}">
       
-         <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
+        <a class="font-small" target = "_blank" href="Http://zerospots.DripJobs.com">Request a Quote</a>
+           
+      
         
-            <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Request a Quote</a>
-      
-
-              
-        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-            <h3 class="mb-6 text-2xl font-medium text-black text-center">Request a Quote</h3>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="first-name" id="0-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="last-name" id="0-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="phone-number" id="0-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <textarea name="message" cols="5" id="0-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
-        </div>
-        <div class="block">
-        <button type="button" 
-         
-        onclick= "send_sms(0, 'Zero-Spots')" 
-        class="w-full px-3 py-4 font-bold font-lg text-white  bg-black text-white  hover:bg-yellow-200   hover:text-black  rounded-lg">Send</button> 
-        </div>           
-
-    </form>
-</div>
     </nav>
   </div>
 </div>
@@ -138,88 +119,64 @@ class="flex relative flex-col w-full  bg-white text-black  lg:flex-row lg:flex-w
     <div class="flex justify-end p-8 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
         <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
             <h2 class="mb-3 text-3xl text-center font-extrabold  leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
-                Zero Spots  
+                Zero Spots 
             </h2>
             
             <h1 class="pt-5 lg:text-xl text-center lg:text-left">
-                The best painting, staining &amp; home renovations in  Tuscaloosa County & surrounding areas.  Exceptional, Professional Painting Service. You Are Our Priority.
+                <!--  
+                    The best painting, staining &amp; home renovations in
+                     Tuscaloosa County & surrounding areas.
+                     
+                  -->
+                Exceptional, Professional Painting Service. You Are Our Priority.
             </h1>
             
             <h2 class="py-5 mb-5 lg:text-xl text-center lg:text-left">
             </h2>
-            <div id="cover-button">
-                 
-            <div id="" class="flex text-center justify-center items-center z-50" x-data="{open: false}">
+            
+            <div class="flex flex-col lg:flex-row flex-grow flex-col space-y-5 md:space-y-0 w-full lg:w-auto md:space-y-5 lg:space-y-0">
+                <div class=" w-full lg:w-auto">
                 
-<button 
- id="" type="button" x-on:click.prevent="open = true" class=" inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-black text-white  hover:bg-yellow-200   hover:text-black ">
-    <h5 class="text-3xl font-extrabold">Request a Quote</h5> 
-</button>
+  
+                </div>
 
-                <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-            <h3 class="mb-6 text-2xl font-medium text-black text-center">Request a Quote</h3>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
-        </div>
-        <div class="block">
-        <button type="button" 
-         
-        onclick= "send_sms(1, 'Zero-Spots')" 
-        class="w-full px-3 py-4 font-bold font-lg text-white  bg-black text-white  hover:bg-yellow-200   hover:text-black  rounded-lg">Send</button> 
-        </div>           
-
-    </form>
-</div>
-
-            </div>
+                <div id="cover-button" class="w-full lg:w-auto ">
+                    
  
-            </div>
-
-            <div >
-                 
-            <div id="" class="flex text-center justify-center items-center z-50" x-data="{open: false}">
-                
+    <a id="" class="" w-full lg:w-auto " target = "_blank" href="Http://zerospots.DripJobs.com">
+        <div class="flex text-center justify-center items-center">
+            
 <button 
- id="side-button" type="button" x-on:click.prevent="open = true" class="mb-3 fixed bottom-0 -right-80 z-10 mr-3 md:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-black text-white  hover:bg-yellow-200   hover:text-black ">
+ id="" type="button" x-on:click.prevent="open = true" class=" 
+  w-full lg:w-auto 
+
+    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-black text-white  hover:bg-yellow-200   hover:text-black  z-30">
     <h5 class="text-3xl font-extrabold">Request a Quote</h5> 
 </button>
 
-                <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
-    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-            <h3 class="mb-6 text-2xl font-medium text-black text-center">Request a Quote</h3>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
         </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
-        </div>
-        <div class="block mb-4 border border-gray-200 rounded-lg">
-            <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
-        </div>
-        <div class="block">
-        <button type="button" 
-         
-        onclick= "send_sms(2, 'Zero-Spots')" 
-        class="w-full px-3 py-4 font-bold font-lg text-white  bg-black text-white  hover:bg-yellow-200   hover:text-black  rounded-lg">Send</button> 
-        </div>           
+    </a>
+ 
+                </div>
 
-    </form>
-</div>
+                <div>
+                    
+ 
+    <a id="" class="" w-full lg:w-auto " target = "_blank" href="Http://zerospots.DripJobs.com">
+        <div class="flex text-center justify-center items-center">
+            
+<button 
+ id="side-button" type="button" x-on:click.prevent="open = true" class=" 
+  
 
-            </div>
+   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-40 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-black text-white  hover:bg-yellow-200   hover:text-black  z-30">
+    <h5 class="text-3xl font-extrabold">Request a Quote</h5> 
+</button>
+
+        </div>
+    </a>
+
+                </div>
 
             </div>
         </div>
@@ -227,7 +184,9 @@ class="flex relative flex-col w-full  bg-white text-black  lg:flex-row lg:flex-w
     <div class="relative order-first lg:order-last block lg:w-1/2 ">
 
     
-        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BCDBPI809BWU8YDM9N3MP9SI8ZTSQNGWC8POUPF2.gif"  alt = "Main hero image of Zero Spots performing Painting, Staining &amp; Home Renovations work"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+        
+            <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BCDBPI809BWU8YDM9N3MP9SI8ZTSQNGWC8POUPF2.gif"   alt = "Main hero image of Zero Spots performing Painting, Staining &amp; Home Renovations work"  class="object-cover w-full lg:absolute h-80 lg:h-full">
+            
     
     </div>
 
@@ -302,13 +261,16 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
         <br>
     </div>
 
+                
             
             </div>
             
                 <div class = "mt-10 mb-0 flex flex-row justify-center lg:justify-start text-center w-full lg:max-w-lg">
+                
                     <h2  class="mb-3 text-4xl justify-center lg:justify-start text-center lg:text-left text-black-900 font-extrabold leading-none tracking-wide text-center">
                         Connect with us on Social
                     </h2>
+                
                 </div>
                 <div class = "flex flex-row mb-5 justify-center space-x-3 md:space-x-8 lg:space-x-12 lg:flex-nowrap mt-4   w-full lg:max-w-lg">
                     
@@ -347,8 +309,9 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     </section>
     
     
+    
     <section   id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-white text-black  border-solid ">
-        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24">
+        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24 ">
             
             <h2 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
                 Our Services
@@ -444,122 +407,122 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     </section>
     
     
-        <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden  bg-black text-white  md:pt-20 xl:pt-20 xl:pb-20">
-            <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
-                <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
-                <h2 class="my-3 mb-10 text-xl font-medium  text-black-400  text-center">See why our customers love us</h2>
-                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ETLC3UYGSW51EZ7OXZSDM3KYBFY2XTKSLKHUY0CW.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/CBEC77YJ3FNTZJP4UXI41MN8UD0SP9C9WHJH8JFH.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/C3KPAHCZ45WUFDVJONDQ75KDEHCYGDRMJ5MQCJY2.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/Y98DZSRD8TSSI6B7FHTTI012OBOBD2XTRQ24UEED.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/87OBTCZZUHPCBMK6C6LATSVY9NDR3X3RAMDZUWZN.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/N3VFO6GK5JBTNBG8UTWA0HH54T41XSY0CANVEZ2P.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ETLC3UYGSW51EZ7OXZSDM3KYBFY2XTKSLKHUY0CW.jpeg"  alt = "Photo number 1 of Zero Spots&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/CBEC77YJ3FNTZJP4UXI41MN8UD0SP9C9WHJH8JFH.jpeg"  alt = "Photo number 2 of Zero Spots&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/C3KPAHCZ45WUFDVJONDQ75KDEHCYGDRMJ5MQCJY2.jpeg"  alt = "Photo number 3 of Zero Spots&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/Y98DZSRD8TSSI6B7FHTTI012OBOBD2XTRQ24UEED.jpeg"  alt = "Photo number 4 of Zero Spots&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/87OBTCZZUHPCBMK6C6LATSVY9NDR3X3RAMDZUWZN.jpeg"  alt = "Photo number 5 of Zero Spots&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                                        
-                            
-                                  
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/N3VFO6GK5JBTNBG8UTWA0HH54T41XSY0CANVEZ2P.jpeg"  alt = "Photo number 6 of Zero Spots&#x27;s best work performing a null job"   loading="lazy" ></div>
-                        
-                     
-                                        
-            
-                    <div class=" z-50 fixed top-0 left-0 w-full h-full flex items-center justify-center" x-show.transition="open" @click.away="open = false" >
+    
+    
 
-
+    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden   bg-black text-white  md:pt-20 xl:pt-20 xl:pb-20">
+        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
+            <h2 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
+            <h2 class="my-3 mb-10 text-xl font-medium  text-black-400  text-center">See why our customers love us</h2>
+            <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/ETLC3UYGSW51EZ7OXZSDM3KYBFY2XTKSLKHUY0CW.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/CBEC77YJ3FNTZJP4UXI41MN8UD0SP9C9WHJH8JFH.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/C3KPAHCZ45WUFDVJONDQ75KDEHCYGDRMJ5MQCJY2.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/Y98DZSRD8TSSI6B7FHTTI012OBOBD2XTRQ24UEED.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/87OBTCZZUHPCBMK6C6LATSVY9NDR3X3RAMDZUWZN.jpeg', 'photo'],    [ 'https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/N3VFO6GK5JBTNBG8UTWA0HH54T41XSY0CANVEZ2P.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ETLC3UYGSW51EZ7OXZSDM3KYBFY2XTKSLKHUY0CW.jpeg"  alt = "Photo number 1 of Zero Spots&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/CBEC77YJ3FNTZJP4UXI41MN8UD0SP9C9WHJH8JFH.jpeg"  alt = "Photo number 2 of Zero Spots&#x27;s best work performing a null job"   loading="lazy" ></div>
                     
-                        <div class="flex items-center justify-start w-12 m-2 ml-6 mb-4 md:m-2 z-50 absolute bottom-0 transform translate-x-12 md:translate-x-32">
-                        <button
-                                class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-opacity-75 bg-white"                                
-                                @click="open = false">
-                             <span class = "text-black"> <i class="fas fa-lg fa-times"></i> </span>
-                        </button>
-                        </div>
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/C3KPAHCZ45WUFDVJONDQ75KDEHCYGDRMJ5MQCJY2.jpeg"  alt = "Photo number 3 of Zero Spots&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/Y98DZSRD8TSSI6B7FHTTI012OBOBD2XTRQ24UEED.jpeg"  alt = "Photo number 4 of Zero Spots&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/87OBTCZZUHPCBMK6C6LATSVY9NDR3X3RAMDZUWZN.jpeg"  alt = "Photo number 5 of Zero Spots&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                                    
+                        
+                        <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/N3VFO6GK5JBTNBG8UTWA0HH54T41XSY0CANVEZ2P.jpeg"  alt = "Photo number 6 of Zero Spots&#x27;s best work performing a null job"   loading="lazy" ></div>
+                    
+                 
+                                    
+        
+                <div class="z-50 fixed top-0 left-0 w-full h-full flex items-center justify-center" x-show.transition="open" >
 
-                        <div class= "h-90 w-90 flex items-center justify-center overflow-hidden">
 
-                            <template  x-for="(slide, index, collection) in slides" :key="index">
-                                <div class="h-full w-full flex items-center justify-center absolute">
-                                    <div class="absolute top-0 bottom-0 py-2  px-2 flex flex-col items-center justify-center"
-                                        x-show="activeSlide === index" 
-                                        x-transition:enter="transition ease-out duration-150"
-                                        x-transition:enter-start="opacity-0 transform scale-90"
-                                        x-transition:enter-end="opacity-100 transform scale-100"
-                                        x-transition:leave="transition ease-in duration-150"
-                                        x-transition:leave-start="opacity-100 transform scale-100"
-                                        x-transition:leave-end="opacity-0 transform scale-90">
+                
+                
+                    <div class="flex items-center justify-start w-12  ml-6 md:m-2 z-50 absolute bottom-1/4 md:bottom-0 transform translate-x-12 md:translate-x-32" >
+                    <button
+                    
+                            class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none bg-black-400"                                
+                            @click="open = false">
+                         <span class = "text-white"> <i class="fas fa-lg fa-times"></i> </span>
+                    </button>
+                    </div>
 
-                                        <template x-if="slide[1] === 'photo' ">
-                                            <img :src="slide[0]" class="object-contain max-w-full max-h-full rounded shadow-lg" />
-                                        </template>
-                                        
-                                        <template x-if="slide[1] != 'photo'  ">
-                                            <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
-                                            </video>
-                                        </template> 
-                                        
-                                    </div>
-                                    <div class="fixed text-white text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
-                                        x-show="activeSlide === index">
-                                        <span class="w-12 text-right" x-text="index + 1"></span>
-                                        <span class="w-4 text-center">/</span>
-                                        <span class="w-12 text-left" x-text="slides.length"></span>
-                                    </div>
+                    <div class= "h-90 w-90 flex items-center justify-center overflow-hidden">
+
+                        <template  x-for="(slide, index, collection) in slides" :key="index">
+                            <div class="h-full w-full flex items-center justify-center absolute">
+                                <div class="absolute top-0 bottom-0 py-2  px-2 flex flex-col items-center justify-center"
+                                    x-show="activeSlide === index" 
+                                    x-transition:enter="transition ease-out duration-150"
+                                    x-transition:enter-start="opacity-0 transform scale-90"
+                                    x-transition:enter-end="opacity-100 transform scale-100"
+                                    x-transition:leave="transition ease-in duration-150"
+                                    x-transition:leave-start="opacity-100 transform scale-100"
+                                    x-transition:leave-end="opacity-0 transform scale-90">
+
+                                    <template x-if="slide[1] === 'photo' ">
+                                        <img :src="slide[0]" class="object-contain max-w-full max-h-full rounded shadow-lg" />
+                                    </template>
+                                    
+                                    <template x-if="slide[1] != 'photo'  ">
+                                        <video class="object-contain max-w-full max-h-full rounded shadow-lg"  controls> <source :src="slide[0]" >
+                                        </video>
+                                    </template> 
+                                    
                                 </div>
+                                <div  class="fixed text-black-400 text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
+                                    x-show="activeSlide === index">
+                                    <span class="w-12 text-right" x-text="index + 1"></span>
+                                    <span class="w-4 text-center">/</span>
+                                    <span class="w-12 text-left" x-text="slides.length"></span>
+                                </div>
+                            </div>
                         </template>
 
-                        <div class="fixed z-50 bottom-0 mb-4 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center">
-                            <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
-                            <button 
-                                    type="button"
-                                    class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-opacity-75 bg-white  " 
-                                   
-                                    @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
-                                    <span class = "text-black"> <i class="fas fa-lg fa-chevron-left"></i> </span>
+                    <div class="fixed md:fixed z-50 absolute bottom-1/4 md:bottom-0 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center" @click.away="open = false">
+                        <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
+                        <button 
+                                type="button"
+                                
+                                class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-black-400" 
                                
-                            </button>
-                            </div>
-                            <div class="flex items-center justify-start w-12 md:ml-16">
-                            <button 
-                                    type="button"
-                                    class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center bg-opacity-75 bg-white   "
-                                   
-                                    @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
-                               <span class = "text-black"> <i class="fas fa-lg fa-chevron-right"></i> </span>
-                            </button>
-                            </div>
+                                @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
+                                <span class = "text-white"> <i class="fas fa-lg fa-chevron-left"></i> </span>
+                           
+                        </button>
                         </div>
-
+                        <div class="flex items-center justify-start w-12 md:ml-16">
+                        <button 
+                                type="button"
+                                
+                                class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center  bg-black-400   "
+                               
+                                @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
+                           <span class = "text-white"> <i class="fas fa-lg fa-chevron-right"></i> </span>
+                        </button>
+                        </div>
                     </div>
+
                 </div>
-            </div>     
-    
-                
-        </div>
-    </div>
-    
+            </div>
+            </div>
+        </div>     
+
+            
+</div>
         
     
-    <div  id= "testimonials" class="flex items-center justify-center  bg-white text-black   py-20 min-w-screen px-4">
+    
+    <div  id= "testimonials" class=" flex items-center justify-center  bg-white text-black   py-20 min-w-screen px-4">
         <div class="px-16 ">
             <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
                 <div class = "sm:mb-4 md:mb-0">
@@ -577,7 +540,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                 <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
 
                     
-            
+                    
                     <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
                     <div class="flex items-center lg:items-start ">
                         
@@ -604,9 +567,10 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                     </div>
                     
                     </div>
+                    
 
                     
-            
+                    
                     <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
                     <div class="flex items-center lg:items-start ">
                         
@@ -633,9 +597,10 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                     </div>
                     
                     </div>
+                    
 
                     
-            
+                    
                     <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
                     <div class="flex items-center lg:items-start ">
                         
@@ -662,9 +627,10 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                     </div>
                     
                     </div>
+                    
 
                     
-            
+                    
                     <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
                     <div class="flex items-center lg:items-start ">
                         
@@ -691,9 +657,10 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                     </div>
                     
                     </div>
+                    
 
                     
-            
+                    
                     <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
                     <div class="flex items-center lg:items-start ">
                         
@@ -720,13 +687,14 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                     </div>
                     
                     </div>
+                    
 
                     
                 </div>  
                 
                 <div class = "flex flex-col space-y-5 md:flex-row md:space-x-5 md:space-y-0 ">
                 
-                <a target= "_blank" href="https://www.facebook.com/Zerospots1/reviews/?ref=page_internal">
+                <a target= "_blank" href="https://www.facebook.com/Zerospots1/reviews/?ref=page_internal"  class="w-full">
                     <button   type="button" class="inline-flex w-full items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-black text-white  hover:bg-yellow-200  hover:text-black ">
                             <h5 class="text-2xl font-extrabold">Leave a Review</h5> 
                     </button>
